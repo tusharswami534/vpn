@@ -1,0 +1,265 @@
+.span-vpn {
+    font-family: var(--rubik);
+    font-size: var(--fs-2xl);
+    font-weight: 700;
+    line-height: 23.7px;
+    color: var(--dark);
+
+}
+
+.Logo {
+    font-family: var(--rubik);
+    font-size: var(--fs-2xl);
+    font-weight: 500;
+    line-height: 23.7px;
+    color: var(--dark);
+}
+
+.links {
+    font-family: var(--rubik);
+    font-size: var(--fs-lg);
+    font-weight: 400;
+    line-height: 18.96px;
+    color: var(--primary);
+
+}
+
+.links:hover {
+    -webkit-text-stroke: 1px var(--dark);
+}
+
+.Sign-in {
+    font-family: var(--rubik);
+    font-size: var(--fs-lg);
+    font-weight: 500;
+    line-height: 18.96px;
+    border: transparent;
+    background-color: transparent;
+
+}
+
+.ml-30 {
+    margin-left: 30px;
+}
+
+.Sign-up {
+    width: 150px;
+    height: 46px;
+    background-color: var(--main);
+    border-radius: 50px;
+    font-family: var(--rubik);
+    font-size: var(--fs-lg);
+    font-weight: 500;
+    line-height: 18.96px;
+    color: var(--white);
+    border: transparent;
+    transition: all 500ms linear;
+
+}
+
+.Sign-up:hover {
+    background-color: var(--white);
+    color: var(--main);
+    border: 1px solid var(--main);
+}
+
+.max-width-850 {
+    max-width: 850px;
+}
+
+.rotated {
+    transform: rotate(35deg);
+    transition: all 300ms linear;
+    transform-origin: left;
+}
+
+.rotated-2 {
+    transform: rotate(-35deg);
+    transition: all 300ms linear;
+    transform-origin: left;
+}
+
+/* header end */
+/* sec-1 */
+.heading {
+    font-family: var(--rubik);
+    font-size: var(--fs-6xl);
+    font-weight: 500;
+    line-height: 70px;
+
+
+}
+
+.vpn-2 {
+    font-family: var(--rubik);
+    font-size: var(--fs-6xl);
+    font-weight: 700;
+    line-height: 70px;
+    text-align: left;
+
+}
+
+.sub-heading {
+    font-family: var(--rubik);
+    font-size: var(--fs-lg);
+    font-weight: 400;
+    line-height: 30px;
+
+
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.sub-vpn {
+    font-family: var(--rubik);
+    font-size: var(--fs-lg);
+    font-weight: 500;
+    line-height: 30px;
+
+
+}
+
+.get-st {
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    color: var(--white);
+    background-color: var(--main);
+    font-family: var(--rubik);
+    font-size: var(--fs-lg);
+    font-weight: 700;
+    line-height: 25px;
+    border: transparent;
+    transition: all 500ms linear;
+
+}
+
+.get-st:hover {
+    background-color: var(--white);
+    color: var(--main);
+    border: 2px solid var(--main);
+}
+
+.liner {
+    background: #F5383859;
+    width: 211px;
+    height: 63px;
+    opacity: 60%;
+    top: 32%;
+    left: 3.5%;
+    box-shadow: #F5383859;
+
+}
+
+.numbers {
+    font-family: var(--rubik);
+    font-size: var(--fs-3xl);
+    font-weight: 700;
+    line-height: 30px;
+
+
+}
+
+.h-200 {
+    height: 200px;
+}
+
+.ml-36 {
+    margin-left: 36px;
+}
+
+.number-sub-heading {
+    font-family: var(--rubik);
+    font-size: var(--fs-2xl);
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--primary);
+
+}
+
+/* .shadow-1 {
+    box-shadow: 0px 15px 60px -15px #e4b8b8;
+} */
+.after::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 125px;
+    background-color: var(--null);
+    right: 0;
+    top: -50%;
+}
+
+.plan {
+    font-family: var(--rubik);
+    font-size: var(--fs-4xl);
+    font-weight: 500;
+    line-height: 50px;
+   
+
+}
+
+
+@media (max-width:992px) {
+
+    .nav-links {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: var(--null);
+        justify-content: center !important;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        transition: all 300ms;
+        z-index: 1;
+
+    }
+
+    .max-width-992 {
+        max-width: 992px;
+    }
+
+
+    .lines {
+        width: 35px;
+        height: 5px;
+        background-color: var(--dark);
+        margin-bottom: 5px;
+        border-radius: 5px;
+        transition: all 300ms linear;
+
+    }
+
+
+    .Sign-up {
+        padding: 0;
+        margin: 0;
+    }
+
+    .show-nav {
+        right: 0;
+    }
+
+    /* sec-1 */
+    .heading {
+        font-size: var(--fs-4xl);
+    }
+
+    .vpn-2 {
+        font-size: var(--fs-4xl);
+    }
+
+    .sub-heading {
+        font-size: var(--fs-sm);
+    }
+
+
+    .after::after {
+        display: none;
+    }
+}
