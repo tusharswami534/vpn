@@ -8,18 +8,25 @@
   <link rel="shortcut icon" href="assets/img/png/Logo.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/css/root.css">
   <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
-<body class="">
+<body onload="loding()">
+  <div id="loder"></div>
   <header>
     <div class="container">
       <nav class="d-flex justify-content-between align-items-center ">
         <div class="logo">
           <a class="text-decoration-none align-items-center d-flex Logo" href="/">
-            <img src="assets/img/png/Logo.png" alt="Logo">
+            <img class="me-2" src="assets/img/png/Logo.png" alt="Logo">
             Lasles<span class="span-vpn">VPN</span>
           </a>
         </div>
@@ -215,7 +222,7 @@
 
                         </div>
                         <div class="toast-body">
-                          Valid  on 1 week
+                          Valid on 1 week
                         </div>
                       </div>
                     </div>
@@ -308,10 +315,11 @@
                   <div class="d-flex justify-content-center">
                     <button type="button" class="btn footer-btn btn-danger" id="basicToastBtn-3">Select</button>
 
-                    <div class="toast-container position-fixed top-0 end-0 p-3" data-bs-autohide="false" data-bs-delay="1">
+                    <div class="toast-container position-fixed top-0 end-0 p-3" data-bs-autohide="false"
+                      data-bs-delay="1">
                       <div id="basicToast-3" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                         <div class="toast-header bg-primary text-light">
-                          <h5 class="my-0">Enjoy Your Vip  Plan</h5>
+                          <h5 class="my-0">Enjoy Your Vip Plan</h5>
 
                         </div>
                         <div class="toast-body">
@@ -330,8 +338,371 @@
 
   </section>
   <section>
-    
+    <div class="contrainer align-items-center justify-content-center d-flex flex-column">
+      <div class="texts-box-1 text-center">
+        <h2 class="map-header">Huge Global Network of Fast VPN</h2>
+      </div>
+      <div class="texts-box-2 text-center">
+        <p class="mb-0 map-sub-header">See <span class="map-logo-span"> LaslesVPN </span> everywhere to make it easier
+          for you when you move
+          locations.</p>
+      </div>
+
+
+      <div class="align-items-center w-80 justify-content-center d-flex">
+        <iframe class="w-100"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60882421.31942919!2d54.60325778893958!3d21.351753532325233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3663f18a24cbe857%3A0xa9416bfcd3a0f459!2sAsia!5e0!3m2!1sen!2sin!4v1720773929725!5m2!1sen!2sin"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="container">
+      <div class="d-flex align-items-center overflow-auto justify-content-between w-100">
+        <div>
+          <a target="_blank" href="https://www.netflix.com/in/">
+            <img src="assets/img/png/Netflix.png" alt="Netflix">
+          </a>
+        </div>
+        <div>
+          <a target="_blank" href="https://www.reddit.com/">
+            <img src="assets/img/png/reddit.png" alt="">
+          </a>
+        </div>
+        <div>
+          <a target="_blank" href="https://www.amazon.in/">
+            <img src="assets/img/png/amazon.png" alt="amazon">
+          </a>
+        </div>
+        <div>
+          <a target="_blank" href="https://discord.com/">
+            <img src="assets/img/png/discord.png" alt="Discord">
+          </a>
+        </div>
+        <div>
+          <a target="_blank" href="https://open.spotify.com/">
+            <img src="assets/img/png/spotify.png" alt="spotify">
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
+  <section class="bg pb-10 overflow-hidden position-relative">
+    <div class="container" id="testimonials">
+      <div class="d-flex justify-content-center">
+        <div class="pt-57">
+          <h2 class="trusted-by mb-0 text-center">Trusted by Thousands of</h2>
+          <h2 class="happy-customer mb-0 text-center ">Happy Customer</h2>
+          <p class="these-are mb-0 text-center pt-20">These are the stories of our customers who have joined
+            us with
+            great</p>
+          <p class="pleasure-when d-flex justify-content-center mb-0 text-center pb-60">pleasure when using
+            this crazy
+            feature.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-60">
+      <div class="container" id="features">
+        <div class="sliderbox z-5  align-items-center">
+          <div class="slider-box mx-2 ">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <div class="slider-image">
+                  <img src="./assets/img/png/Profile-img-1.png" alt="image">
+                </div>
+                <div class="para-1 pl-20">
+                  <h2 class="slick-box-heading mb-0">Viezh Robert</h2>
+                  <p class="slick-box-address mb-0">Warsaw, Poland</p>
+                </div>
+              </div>
+              <div class="para-2 d-flex align-items-center  gap-10">
+                <p class="svg-no mb-0">4.5</p>
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.189 6.16583L10.2218 5.58926L8.44834 1.99395C8.39991 1.89551 8.32022 1.81583 8.22178 1.76739C7.97491 1.64551 7.67491 1.74708 7.55147 1.99395L5.77803 5.58926L1.81084 6.16583C1.70147 6.18145 1.60147 6.23301 1.52491 6.31114C1.43235 6.40627 1.38134 6.53426 1.3831 6.66699C1.38486 6.79971 1.43924 6.9263 1.53428 7.01895L4.40459 9.81739L3.72647 13.769C3.71057 13.8609 3.72074 13.9554 3.75583 14.0418C3.79093 14.1283 3.84953 14.2032 3.92501 14.258C4.00049 14.3128 4.08982 14.3454 4.18288 14.352C4.27593 14.3586 4.36898 14.3391 4.45147 14.2955L7.99991 12.4299L11.5483 14.2955C11.6452 14.3471 11.7577 14.3643 11.8655 14.3455C12.1374 14.2986 12.3202 14.0408 12.2733 13.769L11.5952 9.81739L14.4655 7.01895C14.5437 6.94239 14.5952 6.84239 14.6108 6.73301C14.653 6.45958 14.4624 6.20645 14.189 6.16583Z"
+                    fill="#FEA250" />
+                </svg>
+              </div>
+            </div>
+            <p class="slick-para-3 mb-0">“Wow... I am very happy to use this VPN, it turned out to be more
+              than my expectations and so far there have been no
+              problems. LaslesVPN always the best”.
+            </p>
+          </div>
+          <div class="slider-box mx-2 ">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <div class="slider-image">
+                  <img src="./assets/img/png/Profile-img-2.png" alt="image">
+                </div>
+                <div class="para-1 pl-20">
+                  <h2 class="slick-box-heading mb-0">Yessica Christy</h2>
+                  <p class="slick-box-address mb-0">Shanxi, China</p>
+                </div>
+              </div>
+              <div class="para-2 d-flex align-items-center gap-10">
+                <p class="svg-no mb-0">4.5</p>
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.189 6.16583L10.2218 5.58926L8.44834 1.99395C8.39991 1.89551 8.32022 1.81583 8.22178 1.76739C7.97491 1.64551 7.67491 1.74708 7.55147 1.99395L5.77803 5.58926L1.81084 6.16583C1.70147 6.18145 1.60147 6.23301 1.52491 6.31114C1.43235 6.40627 1.38134 6.53426 1.3831 6.66699C1.38486 6.79971 1.43924 6.9263 1.53428 7.01895L4.40459 9.81739L3.72647 13.769C3.71057 13.8609 3.72074 13.9554 3.75583 14.0418C3.79093 14.1283 3.84953 14.2032 3.92501 14.258C4.00049 14.3128 4.08982 14.3454 4.18288 14.352C4.27593 14.3586 4.36898 14.3391 4.45147 14.2955L7.99991 12.4299L11.5483 14.2955C11.6452 14.3471 11.7577 14.3643 11.8655 14.3455C12.1374 14.2986 12.3202 14.0408 12.2733 13.769L11.5952 9.81739L14.4655 7.01895C14.5437 6.94239 14.5952 6.84239 14.6108 6.73301C14.653 6.45958 14.4624 6.20645 14.189 6.16583Z"
+                    fill="#FEA250" />
+                </svg>
+              </div>
+            </div>
+            <p class="slick-para-3 mb-0">“I like it because I like to travel far and still can connect with
+              high speed.”.</p>
+          </div>
+          <div class="slider-box mx-2 ">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <div class="slider-image">
+                  <img src="./assets/img/png/Profile-img-3.png" alt="image">
+                </div>
+                <div class="para-1 pl-20">
+                  <h2 class="slick-box-heading mb-0">Kim Young Jou</h2>
+                  <p class="slick-box-address mb-0">Seoul, South Korea</p>
+                </div>
+              </div>
+              <div class="para-2 d-flex align-items-center gap-10">
+                <p class="svg-no mb-0">4.5</p>
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.189 6.16583L10.2218 5.58926L8.44834 1.99395C8.39991 1.89551 8.32022 1.81583 8.22178 1.76739C7.97491 1.64551 7.67491 1.74708 7.55147 1.99395L5.77803 5.58926L1.81084 6.16583C1.70147 6.18145 1.60147 6.23301 1.52491 6.31114C1.43235 6.40627 1.38134 6.53426 1.3831 6.66699C1.38486 6.79971 1.43924 6.9263 1.53428 7.01895L4.40459 9.81739L3.72647 13.769C3.71057 13.8609 3.72074 13.9554 3.75583 14.0418C3.79093 14.1283 3.84953 14.2032 3.92501 14.258C4.00049 14.3128 4.08982 14.3454 4.18288 14.352C4.27593 14.3586 4.36898 14.3391 4.45147 14.2955L7.99991 12.4299L11.5483 14.2955C11.6452 14.3471 11.7577 14.3643 11.8655 14.3455C12.1374 14.2986 12.3202 14.0408 12.2733 13.769L11.5952 9.81739L14.4655 7.01895C14.5437 6.94239 14.5952 6.84239 14.6108 6.73301C14.653 6.45958 14.4624 6.20645 14.189 6.16583Z"
+                    fill="#FEA250" />
+                </svg>
+              </div>
+            </div>
+            <p class="slick-para-3 mb-0">“This is very unusual for my business that currently requires a
+              virtual private network that has high security.”.</p>
+          </div>
+          <div class="slider-box mx-2 ">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <div class="slider-image">
+                  <img src="./assets/img/png/Profile-img-1.png" alt="image">
+                </div>
+                <div class="para-1 pl-20">
+                  <h2 class="slick-box-heading mb-0">Viezh Robert</h2>
+                  <p class="slick-box-address mb-0">Warsaw, Poland</p>
+                </div>
+              </div>
+              <div class="para-2 d-flex align-items-center  gap-10">
+                <p class="svg-no mb-0">4.5</p>
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.189 6.16583L10.2218 5.58926L8.44834 1.99395C8.39991 1.89551 8.32022 1.81583 8.22178 1.76739C7.97491 1.64551 7.67491 1.74708 7.55147 1.99395L5.77803 5.58926L1.81084 6.16583C1.70147 6.18145 1.60147 6.23301 1.52491 6.31114C1.43235 6.40627 1.38134 6.53426 1.3831 6.66699C1.38486 6.79971 1.43924 6.9263 1.53428 7.01895L4.40459 9.81739L3.72647 13.769C3.71057 13.8609 3.72074 13.9554 3.75583 14.0418C3.79093 14.1283 3.84953 14.2032 3.92501 14.258C4.00049 14.3128 4.08982 14.3454 4.18288 14.352C4.27593 14.3586 4.36898 14.3391 4.45147 14.2955L7.99991 12.4299L11.5483 14.2955C11.6452 14.3471 11.7577 14.3643 11.8655 14.3455C12.1374 14.2986 12.3202 14.0408 12.2733 13.769L11.5952 9.81739L14.4655 7.01895C14.5437 6.94239 14.5952 6.84239 14.6108 6.73301C14.653 6.45958 14.4624 6.20645 14.189 6.16583Z"
+                    fill="#FEA250" />
+                </svg>
+              </div>
+            </div>
+            <p class="slick-para-3 mb-0">“Wow... I am very happy to use this VPN, it turned out to be more
+              than
+              my
+              expectations and so
+              far
+              there have been no
+              problems. LaslesVPN always the best”.</p>
+          </div>
+          <div class="slider-box mx-2 ">
+            <div class="d-flex align-items-center justify-content-between flex-wrap">
+              <div class="d-flex align-items-center">
+                <div class="slider-image">
+                  <img src="./assets/img/png/Profile-img-2.png" alt="image">
+                </div>
+                <div class="para-1 pl-20">
+                  <h2 class="slick-box-heading mb-0">Yessica Christy</h2>
+                  <p class="slick-box-address mb-0">Shanxi, China</p>
+                </div>
+              </div>
+              <div class="para-2 d-flex align-items-center gap-10">
+                <p class="svg-no mb-0">4.5</p>
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.189 6.16583L10.2218 5.58926L8.44834 1.99395C8.39991 1.89551 8.32022 1.81583 8.22178 1.76739C7.97491 1.64551 7.67491 1.74708 7.55147 1.99395L5.77803 5.58926L1.81084 6.16583C1.70147 6.18145 1.60147 6.23301 1.52491 6.31114C1.43235 6.40627 1.38134 6.53426 1.3831 6.66699C1.38486 6.79971 1.43924 6.9263 1.53428 7.01895L4.40459 9.81739L3.72647 13.769C3.71057 13.8609 3.72074 13.9554 3.75583 14.0418C3.79093 14.1283 3.84953 14.2032 3.92501 14.258C4.00049 14.3128 4.08982 14.3454 4.18288 14.352C4.27593 14.3586 4.36898 14.3391 4.45147 14.2955L7.99991 12.4299L11.5483 14.2955C11.6452 14.3471 11.7577 14.3643 11.8655 14.3455C12.1374 14.2986 12.3202 14.0408 12.2733 13.769L11.5952 9.81739L14.4655 7.01895C14.5437 6.94239 14.5952 6.84239 14.6108 6.73301C14.653 6.45958 14.4624 6.20645 14.189 6.16583Z"
+                    fill="#FEA250" />
+                </svg>
+              </div>
+            </div>
+            <p class="slick-para-3 mb-0">“I like it because I like to travel far and still can connect with
+              high speed.”.</p>
+          </div>
+
+        </div>
+        <div class="d-flex gap-15 justify-content-flex-end slick-arrow-buttons mt-25  ">
+
+          <button class="prev d-sm-flex d-none align-items-center justify-content-center"><svg width="20" height="18"
+              viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.75 7.74961H3.925L8.4625 2.29961C8.67467 2.04434 8.77675 1.71524 8.74628 1.38471C8.7158 1.05417 8.55527 0.749285 8.3 0.537112C8.04473 0.324939 7.71563 0.222862 7.3851 0.253336C7.05456 0.283811 6.74967 0.444341 6.5375 0.699612L0.2875 8.19961C0.245451 8.25927 0.207849 8.32194 0.175 8.38711C0.175 8.44961 0.175 8.48711 0.0875002 8.54961C0.0308421 8.69294 0.0011764 8.8455 0 8.99961C0.0011764 9.15372 0.0308421 9.30629 0.0875002 9.44961C0.0875002 9.51211 0.0874998 9.54961 0.175 9.61211C0.207849 9.67729 0.245451 9.73996 0.2875 9.79961L6.5375 17.2996C6.65503 17.4407 6.8022 17.5542 6.96856 17.632C7.13491 17.7097 7.31636 17.7499 7.5 17.7496C7.79207 17.7502 8.07511 17.6485 8.3 17.4621C8.42657 17.3572 8.5312 17.2283 8.60789 17.0829C8.68458 16.9374 8.73183 16.7783 8.74692 16.6146C8.76202 16.4509 8.74466 16.2858 8.69586 16.1288C8.64705 15.9718 8.56775 15.8259 8.4625 15.6996L3.925 10.2496H18.75C19.0815 10.2496 19.3995 10.1179 19.6339 9.8835C19.8683 9.64907 20 9.33113 20 8.99961C20 8.66809 19.8683 8.35015 19.6339 8.11573C19.3995 7.88131 19.0815 7.74961 18.75 7.74961Z"
+                fill="#F53838" />
+            </svg>
+          </button>
+          <button class="next align-items-center d-sm-flex d-none justify-content-center"><svg width="20" height="18"
+              viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.25 7.74961H16.075L11.5375 2.29961C11.3253 2.04434 11.2232 1.71524 11.2537 1.38471C11.2842 1.05417 11.4447 0.749285 11.7 0.537112C11.9553 0.324939 12.2844 0.222862 12.6149 0.253336C12.9454 0.283811 13.2503 0.444341 13.4625 0.699612L19.7125 8.19961C19.7545 8.25927 19.7922 8.32194 19.825 8.38711C19.825 8.44961 19.825 8.48711 19.9125 8.54961C19.9692 8.69294 19.9988 8.8455 20 8.99961C19.9988 9.15372 19.9692 9.30629 19.9125 9.44961C19.9125 9.51211 19.9125 9.54961 19.825 9.61211C19.7922 9.67729 19.7545 9.73996 19.7125 9.79961L13.4625 17.2996C13.345 17.4407 13.1978 17.5542 13.0314 17.632C12.8651 17.7097 12.6836 17.7499 12.5 17.7496C12.2079 17.7502 11.9249 17.6485 11.7 17.4621C11.5734 17.3572 11.4688 17.2283 11.3921 17.0829C11.3154 16.9374 11.2682 16.7783 11.2531 16.6146C11.238 16.4509 11.2553 16.2858 11.3041 16.1288C11.3529 15.9718 11.4322 15.8259 11.5375 15.6996L16.075 10.2496H1.25C0.91848 10.2496 0.600536 10.1179 0.366116 9.8835C0.131695 9.64907 0 9.33113 0 8.99961C0 8.66809 0.131695 8.35015 0.366116 8.11573C0.600536 7.88131 0.91848 7.74961 1.25 7.74961Z"
+                fill="#F53838" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+  <footer class="bg-light-color position-relative">
+    <div class="container position-absolute bg-white top-left border-radius-10  p-70 d-flex justify-content-between align-items-center show">
+      <div class="footer-slider-text">
+        <h1 class="slider-footer">Subscribe Now for Get Special Features!</h1>
+        <p class="mb-0 slider-sm-text">Let's subscribe with us and find the fun.</p>
+      </div>
+      <button class="get-st mt-5">
+        Subscribe Now
+      </button>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <div class="max-340">
+            <a class="text-decoration-none align-items-center d-flex Logo" href="/">
+              <img class="me-2" src="assets/img/png/Logo.png" alt="Logo">
+              Lasles<span class="span-vpn">VPN</span>
+            </a>
+            <p class=" mb-0 footer-logo-text"> <span class="footer-span">LaslesVPN </span> is a private virtual network
+              that has unique features and has high security.</p>
+          </div>
+          <div class="svg d-flex">
+            <div class="facebook">
+              <a target="_blank" href="https://www.facebook.com/">
+                <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_d_34717_8412)">
+                    <circle cx="34.7999" cy="22.38" r="16.7999" fill="#F53838" />
+                  </g>
+                  <path
+                    d="M34.8 5.58008C25.5215 5.58008 18 13.1016 18 22.3801C18 31.6586 25.5215 39.1801 34.8 39.1801C44.0785 39.1801 51.6 31.6586 51.6 22.3801C51.6 13.1016 44.0785 5.58008 34.8 5.58008ZM38.7795 17.1896H36.2543C35.955 17.1896 35.6225 17.5833 35.6225 18.1066V19.9301H38.7813L38.3035 22.5306H35.6225V30.3373H32.6423V22.5306H29.9385V19.9301H32.6423V18.4006C32.6423 16.2061 34.1648 14.4228 36.2543 14.4228H38.7795V17.1896Z"
+                    fill="white" />
+                  <defs>
+                    <filter id="filter0_d_34717_8412" x="0" y="0.580078" width="69.5996" height="69.5996"
+                      filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha" />
+                      <feOffset dy="13" />
+                      <feGaussianBlur stdDeviation="9" />
+                      <feColorMatrix type="matrix"
+                        values="0 0 0 0 0.0658854 0 0 0 0 0.0730469 0 0 0 0 0.1375 0 0 0 0.08 0" />
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_34717_8412" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_34717_8412" result="shape" />
+                    </filter>
+                  </defs>
+                </svg>
+              </a>
+
+            </div>
+            <div class="twitter">
+              <a target="_blank" href="https://x.com/?lang=en">
+                <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_d_34717_8415)">
+                    <circle cx="35.3996" cy="22.38" r="16.7999" fill="#F53838" />
+                  </g>
+                  <path
+                    d="M35.3996 5.58008C26.1211 5.58008 18.5996 13.1016 18.5996 22.3801C18.5996 31.6586 26.1211 39.1801 35.3996 39.1801C44.6781 39.1801 52.1996 31.6586 52.1996 22.3801C52.1996 13.1016 44.6781 5.58008 35.3996 5.58008ZM42.2334 19.3421C42.2404 19.4856 42.2421 19.6291 42.2421 19.7691C42.2421 24.1441 38.9154 29.1858 32.8289 29.1858C31.0304 29.1888 29.2693 28.6723 27.7574 27.6983C28.0146 27.7298 28.2789 27.7421 28.5466 27.7421C30.0971 27.7421 31.5234 27.2153 32.6556 26.3263C31.9656 26.3128 31.297 26.0843 30.7431 25.6727C30.1891 25.2612 29.7773 24.687 29.5651 24.0303C30.0606 24.1246 30.5711 24.1048 31.0579 23.9726C30.3089 23.8211 29.6355 23.4153 29.1516 22.824C28.6677 22.2326 28.4033 21.4922 28.4031 20.7281V20.6878C28.8494 20.9346 29.3604 21.0851 29.9029 21.1026C29.2008 20.6352 28.7037 19.9173 28.5134 19.0956C28.3231 18.2739 28.454 17.4105 28.8791 16.6821C29.7103 17.7041 30.7468 18.5401 31.9216 19.1361C33.0964 19.7321 34.3833 20.0747 35.6989 20.1418C35.5316 19.4319 35.6036 18.6865 35.9036 18.0217C36.2037 17.3569 36.7149 16.8098 37.358 16.4655C38.001 16.1213 38.7398 15.9991 39.4594 16.118C40.1791 16.2369 40.8393 16.5903 41.3374 17.1231C42.0779 16.9766 42.7881 16.7049 43.4374 16.3198C43.1905 17.0866 42.6738 17.7376 41.9831 18.1521C42.6391 18.0731 43.2796 17.8967 43.8836 17.6288C43.44 18.2936 42.8811 18.8738 42.2334 19.3421Z"
+                    fill="white" />
+                  <defs>
+                    <filter id="filter0_d_34717_8415" x="0.599609" y="0.580078" width="69.5996" height="69.5996"
+                      filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha" />
+                      <feOffset dy="13" />
+                      <feGaussianBlur stdDeviation="9" />
+                      <feColorMatrix type="matrix"
+                        values="0 0 0 0 0.0658854 0 0 0 0 0.0730469 0 0 0 0 0.1375 0 0 0 0.08 0" />
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_34717_8415" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_34717_8415" result="shape" />
+                    </filter>
+                  </defs>
+                </svg>
+              </a>
+
+
+            </div>
+            <div class="instagram">
+              <a target="_blank" href="https://www.instagram.com/">
+                <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_d_34717_8418)">
+                    <circle cx="35.0001" cy="22.38" r="16.7999" fill="#F53838" />
+                  </g>
+                  <path
+                    d="M40.2502 22.3801C40.2502 23.7725 39.6971 25.1078 38.7125 26.0924C37.7279 27.077 36.3926 27.6301 35.0002 27.6301C33.6078 27.6301 32.2725 27.077 31.2879 26.0924C30.3033 25.1078 29.7502 23.7725 29.7502 22.3801C29.7502 22.0808 29.7817 21.7886 29.8359 21.5051H28.0002V28.4998C28.0002 28.9863 28.3939 29.3801 28.8804 29.3801H41.1217C41.3549 29.3796 41.5783 29.2867 41.743 29.1216C41.9077 28.9566 42.0002 28.733 42.0002 28.4998V21.5051H40.1644C40.2187 21.7886 40.2502 22.0808 40.2502 22.3801ZM35.0002 25.8801C35.4599 25.88 35.9152 25.7893 36.3399 25.6133C36.7646 25.4372 37.1504 25.1792 37.4754 24.8541C37.8004 24.5289 38.0582 24.1429 38.234 23.7181C38.4099 23.2933 38.5003 22.8381 38.5002 22.3783C38.5001 21.9186 38.4094 21.4634 38.2334 21.0387C38.0573 20.614 37.7994 20.2281 37.4742 19.9031C37.149 19.5781 36.763 19.3203 36.3382 19.1445C35.9135 18.9687 35.4582 18.8782 34.9984 18.8783C34.07 18.8786 33.1796 19.2476 32.5232 19.9043C31.8668 20.561 31.4982 21.4516 31.4984 22.3801C31.4987 23.3086 31.8677 24.1989 32.5244 24.8553C33.1812 25.5117 34.0717 25.8803 35.0002 25.8801ZM39.2002 18.7051H41.2984C41.4378 18.7051 41.5716 18.6498 41.6703 18.5514C41.769 18.453 41.8247 18.3195 41.8252 18.1801V16.0818C41.8252 15.9421 41.7697 15.8081 41.6709 15.7094C41.5721 15.6106 41.4382 15.5551 41.2984 15.5551H39.2002C39.0605 15.5551 38.9265 15.6106 38.8277 15.7094C38.7289 15.8081 38.6734 15.9421 38.6734 16.0818V18.1801C38.6752 18.4688 38.9114 18.7051 39.2002 18.7051ZM35.0002 5.58008C30.5446 5.58008 26.2714 7.35007 23.1208 10.5007C19.9702 13.6513 18.2002 17.9244 18.2002 22.3801C18.2002 26.8357 19.9702 31.1089 23.1208 34.2595C26.2714 37.4101 30.5446 39.1801 35.0002 39.1801C37.2064 39.1801 39.391 38.7455 41.4293 37.9013C43.4676 37.057 45.3196 35.8195 46.8796 34.2595C48.4396 32.6995 49.6771 30.8474 50.5214 28.8092C51.3657 26.7709 51.8002 24.5863 51.8002 22.3801C51.8002 20.1739 51.3657 17.9893 50.5214 15.951C49.6771 13.9127 48.4396 12.0607 46.8796 10.5007C45.3196 8.94066 43.4676 7.70318 41.4293 6.8589C39.391 6.01462 37.2064 5.58008 35.0002 5.58008ZM43.7502 29.1858C43.7502 30.2551 42.8752 31.1301 41.8059 31.1301H28.1944C27.1252 31.1301 26.2502 30.2551 26.2502 29.1858V15.5743C26.2502 14.5051 27.1252 13.6301 28.1944 13.6301H41.8059C42.8752 13.6301 43.7502 14.5051 43.7502 15.5743V29.1858Z"
+                    fill="white" />
+                  <defs>
+                    <filter id="filter0_d_34717_8418" x="0.200195" y="0.580078" width="69.5996" height="69.5996"
+                      filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha" />
+                      <feOffset dy="13" />
+                      <feGaussianBlur stdDeviation="9" />
+                      <feColorMatrix type="matrix"
+                        values="0 0 0 0 0.0658854 0 0 0 0 0.0730469 0 0 0 0 0.1375 0 0 0 0.08 0" />
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_34717_8418" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_34717_8418" result="shape" />
+                    </filter>
+                  </defs>
+                </svg>
+              </a>
+
+            </div>
+          </div>
+          <p class="mb-0 footer">©2020Lasles<span class="span-footer">VPN</span></p>
+        </div>
+        <div class="col-lg-6 col-12 ">
+          <div class="row">
+            <div class="col-md-4  col-6">
+              <h6>ProductProduct</h6>
+              <ul class="list-unstyled ">
+                <li><a class="text-decoration-none footer-links" href="/">Download </a></li>
+                <li><a class="text-decoration-none footer-links" href="/">Pricing </a></li>
+                <li><a class="text-decoration-none footer-links" href="/">Locations </a></li>
+                <li><a class="text-decoration-none footer-links" href="/">Server </a></li>
+                <li><a class="text-decoration-none footer-links" href="/">Countries </a></li>
+                <li><a class="text-decoration-none footer-links" href="/">Blog </a></li>
+
+              </ul>
+            </div>
+            <div class="col-md-4 col-6">
+              <h6>Engage</h6>
+              <ul class="list-unstyled">
+                <li><a class="text-decoration-none footer-links" href="/">LaslesVPN ? </a></li>
+                <li><a class="text-decoration-none footer-links" href="/">FAQ</a></li>
+                <li><a class="text-decoration-none footer-links" href="/">Tutorials</a></li>
+                <li><a class="text-decoration-none footer-links" href="/">About Us</a></li>
+                <li><a class="text-decoration-none footer-links" href="/">Privacy Policy</a></li>
+                <li><a class="text-decoration-none footer-links" href="/">Terms of Service</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-12 ">
+              <h6>Earn Money</h6>
+              <ul class="list-unstyled">
+                <li><a class="text-decoration-none footer-links" href="/">Affiliate</a></li>
+                <li><a class="text-decoration-none footer-links" href="/">Become Partner</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
@@ -339,4 +710,3 @@
 </body>
 
 </html>
-
