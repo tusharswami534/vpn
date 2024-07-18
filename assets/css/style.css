@@ -89,7 +89,7 @@
 
 /* header end */
 /* sec-1 */
-.heading {
+.hero-section-heading {
     font-family: var(--rubik);
     font-size: var(--fs-6xl);
     font-weight: 500;
@@ -98,7 +98,7 @@
 
 }
 
-.vpn-2 {
+.hero-section-header {
     font-family: var(--rubik);
     font-size: var(--fs-6xl);
     font-weight: 700;
@@ -106,6 +106,7 @@
     text-align: left;
 
 }
+
 
 .sub-heading {
     font-family: var(--rubik);
@@ -116,12 +117,13 @@
 
 }
 
+
 .mt-100 {
     margin-top: 100px;
 }
 
-.mt-106 {
-    margin-top: 106px;
+.mt-92 {
+    margin-top: 92px;
 }
 
 .sub-vpn {
@@ -133,12 +135,15 @@
 
 
 }
+.hero-section-card-box{
+    width: 182px;
+}
 
 .show {
     box-shadow: -3px 17px 21px -20px rgba(0, 0, 0, 0.45);
 }
 
-.get-st {
+.footer-btn {
     width: 250px;
     height: 60px;
     border-radius: 10px;
@@ -151,26 +156,17 @@
     border: transparent;
     transition: all 500ms linear;
 
-    box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
 }
 
-.get-st:hover {
-    box-shadow: none;
+.footer-btn:hover {
+   
     background-color: var(--white);
     color: var(--main);
     border: 2px solid var(--main);
+    box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
 }
 
-.liner {
-    background: #F5383859;
-    width: 211px;
-    height: 63px;
-    opacity: 60%;
-    top: 32%;
-    left: 3.5%;
-    box-shadow: #F5383859;
 
-}
 
 .numbers {
     font-family: var(--rubik);
@@ -201,10 +197,10 @@
 /* .shadow-1 {
     box-shadow: 0px 15px 60px -15px #e4b8b8;
 } */
-.after::after {
+.row-after-line::after {
     content: "";
     position: absolute;
-    width: 1px;
+    width: 2px;
     height: 125px;
     background-color: var(--null);
     right: 0;
@@ -236,9 +232,7 @@
 
 }
 
-/* .bg-show {
-    box-shadow: 5px 20.5px 255px -20px rgba(0,0,0,0.45);
-} */
+
 
 .texts {
     max-width: 427px;
@@ -268,6 +262,10 @@
 .header-box {
     border: 2px solid #DDDDDD;
     border-radius: 10px;
+}
+
+.header-box:hover {
+    border: 2px solid var(--main);
 }
 
 .ml-20 {
@@ -762,10 +760,7 @@
     background-color: var(--light);
 }
 
-.top-left {
-    top: -24%;
-    left: 9%;
-}
+
 
 .pb-150 {
     padding-bottom: 150px;
@@ -868,11 +863,11 @@
     }
 
     /* sec-1 */
-    .heading {
+    .hero-section-heading {
         font-size: var(--fs-4xl);
     }
 
-    .vpn-2 {
+    .hero-section-header {
         font-size: var(--fs-4xl);
     }
 
@@ -881,14 +876,14 @@
     }
 
 
-    .after::after {
+    .row-after-line::after {
         display: none;
     }
 
 }
 
 @media (max-width:568px) {
-    .get-st {
+    .footer-btn {
         width: 200px;
     }
 
