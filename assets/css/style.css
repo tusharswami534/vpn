@@ -6,6 +6,30 @@
     z-index: 100;
 }
 
+#back-to-top {
+    width: 50px;
+    height: 50px;
+
+    color: white;
+    border-radius: 30px;
+    border: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+    cursor: pointer;
+    transition: all 300ms linear;
+    z-index: 5;
+
+}
+#back-to-top:hover{
+    background-color: var(--main) !important;
+
+}
+
+
+
+
 .span-vpn {
     font-family: var(--rubik);
     font-size: var(--fs-2xl);
@@ -135,7 +159,8 @@
 
 
 }
-.hero-section-card-box{
+
+.hero-section-card-box {
     width: 182px;
 }
 
@@ -159,7 +184,7 @@
 }
 
 .footer-btn:hover {
-   
+
     background-color: var(--white);
     color: var(--main);
     border: 2px solid var(--main);

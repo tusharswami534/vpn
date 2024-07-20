@@ -20,12 +20,12 @@ document.querySelector("#basicToastBtn-3").onclick = function () {
 const preloader = document.getElementById("loder");
 
 function loding() {
-   
+
     preloader.style.display = "none";
 }
 
 // slider java
-    
+
 
 
 const navbtn = () => {
@@ -85,3 +85,18 @@ $(".sliderbox").slick({
         }
     ]
 });
+
+// back to top 
+let mybutton = document.getElementById("back-to-top");
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
